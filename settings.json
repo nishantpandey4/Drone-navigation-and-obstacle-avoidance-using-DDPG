@@ -1,0 +1,75 @@
+
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "LogMessagesVisible": true,
+  "ShowLosDebugLines": false,
+  "ClockSpeed": 5,
+  "LocalHostIp": "127.0.0.1",
+  "ApiServerPort": 41453,
+
+
+  "Vehicles": {
+    "SimpleFlight": {
+      "VehicleType": "SimpleFlight",
+      "Sensors": {
+        "LidarSensor1": {
+          "SensorType": 6,
+          "Enabled": true,
+          "NumberOfChannels": 16,
+          "RotationsPerSecond": 30,
+          "PointsPerSecond": 100000,
+          "X": 0, "Y": 0, "Z": 0.25,
+          "DrawDebugPoints": true,
+          "VerticalFOVUpper": 10,
+          "VerticalFOVLower": -30,
+
+          "DataFrame":"SensorLocalFrame",
+          "HorizontalFOVStart": -90,
+          "HorizontalFOVEnd": 90,
+          "Range":10
+
+        }
+      }
+    }
+  },
+  "SubWindows": [
+    {"WindowID": 0, "CameraID": 0, "ImageType": 0, "Visible": true},
+    {"WindowID": 1, "CameraID": 0, "ImageType": 3, "Visible": false},
+    {"WindowID": 2, "CameraID": 0, "ImageType": 3, "Visible": true}
+    ],
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": 3,
+        "Width": 100,
+        "Height": 80,
+        "FOV_Degrees": 90,
+        "AutoExposureSpeed": 100,
+        "AutoExposureBias": 0,
+        "AutoExposureMaxBrightness": 0.64,
+        "AutoExposureMinBrightness": 0.03,
+        "MotionBlurAmount": 0,
+        "TargetGamma": 1.0,
+        "ProjectionMode": "",
+        "OrthoWidth": 5.12
+      },
+      {
+        "ImageType": 0,
+        "Width": 256,
+        "Height": 144,
+        "FOV_Degrees": 90,
+        "AutoExposureSpeed": 100,
+        "AutoExposureBias": 0,
+        "AutoExposureMaxBrightness": 0.64,
+        "AutoExposureMinBrightness": 0.03,
+        "MotionBlurAmount": 0,
+        "TargetGamma": 1.0,
+        "ProjectionMode": "",
+        "OrthoWidth": 5.12
+      }
+    ]
+
+}
+}
